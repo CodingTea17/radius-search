@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <!-- PAGE CONTAINER -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header">
+              Radius Search Proof of Concept
+            </div>
+            <div class="card-block">
+              <!-- FORM -->
+              <form id="user-input">
+                <!-- GET LAT -->
+                <!-- TYPE = TEXT INPUT-->
+                <div class="form-group row" id="name-input-group">
+                  <label for="lat" class="col-lg-2 col-form-label">Latitude</label>
+                  <div class="col-lg-10">
+                    <input class="form-control" type="number" step="any" id="lat">
+                  </div>
+                </div>
+                <!-- GET LAT -->
+                <!-- TYPE = TEXT INPUT-->
+                <div class="form-group row" id="name-input-group">
+                  <label for="lat" class="col-lg-2 col-form-label">Longitude</label>
+                  <div class="col-lg-10">
+                    <input class="form-control" type="number" id="long">
+                  </div>
+                </div>
+                <!-- RADIUS SELECTION -->
+                <!-- TYPE = SELECT -->
+                <div class="form-group row">
+                  <label for="work-environment" class="col-6 col-form-label">Distance From Address:</label>
+                  <div class="col-6">
+                    <select class="form-control" id="radius">
+                      <option value="1">1 Mile</option>
+                      <option value="2">2 Miles</option>
+                      <option value="3">3 Miles</option>
+                      <option value="4">4 Miles</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
